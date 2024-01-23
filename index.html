@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles/style.css" />
-    <link rel="stylesheet" href="./fontawesome-free-6.5.1-web/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.5.1-web/css/all.min.css"
+    />
     <title>Taishi-UIB-project</title>
   </head>
   <body>
+    <!-- hero-video -->
     <section class="main-hero">
       <video
         src="./images/pexels-ivan-samkov-8507724 (540p).mp4"
@@ -18,35 +22,55 @@
         left
       ></video>
     </section>
+    <!-- header -->
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <a class="navbar-brand" id="Head" href="#"><i class="fa-brands fa-envira"></i>Nihoncha</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Product</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-disabled="true">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" id="Head" href="#"
+            ><i class="fa-brands fa-envira"></i>Nihoncha</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#product">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-      <section class="space"></section>
-      <section class="about">
+      <section class="space">
+        <h1>
+          <i class="fa-brands fa-envira"></i>Taste of <br />Appreciation
+          <br />Relax <br />and <br />Peace
+        </h1>
+      </section>
+      <!-- about -->
+      <section class="about" id="about">
         <div class="a-container">
           <h2>about us</h2>
           <p>
@@ -65,111 +89,142 @@
           </p>
         </div>
       </section>
-      <section class="product">
+      <!-- product -->
+      <section class="product" id="product">
         <h2>Product</h2>
         <div class="p-container">
-            <div class="card text-bg-dark text-black border-0 item">
-                <img
-                src="./images/img_468fe87bc068a235e6f811dadea471c578901.jpg"
-                class="card-img"
-                alt="..."
-                />
-                <div class="card-img-overlay">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <a href="#" class="btn btn-success">Add to cart</a>
-                </div>
+          <div class="card text-bg-dark text-black border-0 item">
+            <img
+              src="./images/224-Uchiyama-Sencha-scaled.jpg"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+              <h5 class="card-title text-white">Card title</h5>
+              <p class="card-text text-white">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
             </div>
-            <div class="card text-bg-dark text-black border-0 item">
-                <img
-                src="./images/img_468fe87bc068a235e6f811dadea471c578901.jpg"
-                class="card-img"
-                alt="..."
-                />
-                <div class="card-img-overlay">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <a href="#" class="btn btn-success">Add to cart</a>
-                </div>
+          </div>
+          <div class="card text-bg-dark text-black border-0 item">
+            <img
+              src="./images/matcha-tee-mit-anis-zimt-448292_1024x1024.jpg"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-img-overlay">
+              <h5 class="card-title text-white">Card title</h5>
+              <p class="card-text text-white">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
             </div>
-            <div class="card text-bg-dark text-black border-0 item">
-                <img
-                src="./images/img_468fe87bc068a235e6f811dadea471c578901.jpg"
-                class="card-img"
-                alt="..."
-                />
-                <div class="card-img-overlay">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <a href="#" class="btn btn-success">Add to cart</a>
-                </div>
+          </div>
+          <div class="card text-bg-dark text-black border-0 item">
+            <img
+              src="./images/Gyokuro-matcha-tea.jpg"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-img-overlay">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
             </div>
-            <div class="card text-bg-dark text-black border-0 item">
-                <img
-                src="./images/img_468fe87bc068a235e6f811dadea471c578901.jpg"
-                class="card-img"
-                alt="..."
-                />
-                <div class="card-img-overlay">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <a href="#" class="btn btn-success">Add to cart</a>
-                </div>
+          </div>
+          <div class="card text-bg-dark text-black border-0 item hide">
+            <img src="./images/701_Preview.jpg" class="card-img" alt="..." />
+            <div class="card-img-overlay">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
             </div>
-            <div class="card text-bg-dark text-black border-0 item">
-                <img
-                src="./images/img_468fe87bc068a235e6f811dadea471c578901.jpg"
-                class="card-img"
-                alt="..."
-                />
-                <div class="card-img-overlay">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <a href="#" class="btn btn-success">Add to cart</a>
-                </div>
+          </div>
+          <div class="card text-bg-dark text-black border-0 item hide">
+            <img src="./images/964_Preview.jpg" class="card-img" alt="..." />
+            <div class="card-img-overlay">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
             </div>
-            <div class="card text-bg-dark text-black border-0 item">
-                <img
-                src="./images/img_468fe87bc068a235e6f811dadea471c578901.jpg"
-                class="card-img"
-                alt="..."
-                />
-                <div class="card-img-overlay">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <a href="#" class="btn btn-success">Add to cart</a>
-                </div>
+          </div>
+          <div class="card text-bg-dark text-black border-0 item hide">
+            <img
+              src="./images/img_468fe87bc068a235e6f811dadea471c578901.jpg"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-img-overlay">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
             </div>
+          </div>
         </div>
+        <p>
+          <a href="">more..<i class="fa-solid fa-arrow-down-short-wide"></i></a>
+        </p>
       </section>
     </main>
     <footer>
-        <h3>Nihoncha</h3>
+      <h2 id="contact">Contact</h2>
+      <form action="">
+        <div class="contact">
+          <label for="name">Full name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Your full name"
+          />
+          <label for="email">Your email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your Email"
+          />
+        </div>
+        <div class="contact">
+          <label for="message">Tell us your wish</label>
+          <textarea name="message" id="message" cols="30" rows="4"></textarea>
+          <button type="submit">Send</button>
+        </div>
+      </form>
+      <h3>
+        <a href="#"><i class="fa-brands fa-envira"></i>Nihoncha</a>
+      </h3>
+      <div class="icon">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"> <i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-shopify"></i></a>
+      </div>
+      <div class="f-navbar">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Product</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
     </footer>
+    <p>Copyright ©2024 Taishi-UIB-Project</p>
     <script defer src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
   </body>
 </html>
