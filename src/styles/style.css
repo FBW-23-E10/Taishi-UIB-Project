@@ -11880,6 +11880,11 @@ header {
   color: rgb(64, 34, 0);
 }
 
+.container-fluid > a:hover, .container-sm > a:hover, .container-md > a:hover, .container-lg > a:hover, .container-xl > a:hover, .container-xxl > a:hover {
+  color: rgb(255, 255, 255);
+  transition: color 300ms ease;
+}
+
 #Head {
   font-family: "Ultra", sans-serif;
 }
@@ -11940,12 +11945,13 @@ h2, .h2 {
   font-size: 3.2rem;
   color: rgb(64, 34, 0);
   margin: 3rem 0;
-  text-shadow: white 1px 1px 5px;
+  text-shadow: white 2px 2px 5px;
 }
 
 p {
-  text-shadow: white 1px 1px 5px;
+  text-shadow: white 1px 1px 1px;
   color: rgb(64, 34, 0);
+  font-family: monospace, sans-serif;
 }
 
 .product {
@@ -11966,12 +11972,16 @@ p {
 }
 
 .product > p {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   padding: 1rem 0;
+  font-family: monospace, sans-serif;
+  text-shadow: white 2px 2px 5px;
   color: rgb(64, 34, 0);
 }
 
 .product h5, .product .h5 {
+  font-size: 1.5rem;
+  text-shadow: white 2px 2px 5px;
   color: rgb(64, 34, 0);
 }
 
@@ -12069,11 +12079,11 @@ input:focus, textarea:focus {
 button {
   border-radius: 8px;
   background: transparent;
-  border: 1px solid rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  border: 1px solid rgb(64, 34, 0);
+  color: rgb(64, 34, 0);
   font-size: 1rem;
   padding: 0.3rem 1rem;
-  box-shadow: inset 0 0 5px 3px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 0 5px 3px rgb(64, 34, 0);
 }
 
 button:hover {
@@ -12129,11 +12139,11 @@ body > p {
     flex-wrap: wrap;
   }
   .p-container .item {
-    width: 45%;
+    width: 42%;
   }
   .space {
     height: 77vh;
-    margin-top: 8rem;
+    margin-top: 7rem;
     padding: 1rem 3rem;
   }
   .space h1, .space .h1 {
@@ -12181,6 +12191,130 @@ body > p {
   }
   100% {
     transform: rotateY(0);
+  }
+}
+.sencha-header, .matcha-header, .gyokuro-header, .kukicha-header, .genmaicha-header, .houjicha-header {
+  position: fixed;
+  top: 0;
+}
+
+.sencha-main, .matcha-main, .gyokuro-main, .kukicha-main, .genmaicha-main, .houjicha-main {
+  background: linear-gradient(rgb(200, 255, 208) 20%, rgb(234, 255, 239) 70%, rgb(248, 255, 248) 100%);
+}
+
+.name {
+  text-align: center;
+  padding-top: 3.5rem;
+}
+.name h4, .name .h4 {
+  font-size: 2rem;
+  color: rgb(64, 34, 0);
+  text-shadow: white 2px 2px 5px;
+}
+
+.sencha, .matcha, .gyokuro, .kukicha, .genmaicha, .houjicha {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sencha article:nth-child(1),
+.matcha article:nth-child(1),
+.gyokuro article:nth-child(1),
+.kukicha article:nth-child(1),
+.genmaicha article:nth-child(1),
+.houjicha article:nth-child(1) {
+  width: 100%;
+}
+
+.sencha article:nth-child(1) > div,
+.matcha article:nth-child(1) > div,
+.gyokuro article:nth-child(1) > div,
+.kukicha article:nth-child(1) > div,
+.genmaicha article:nth-child(1) > div,
+.houjicha article:nth-child(1) > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sencha article:nth-child(2),
+.matcha article:nth-child(2),
+.gyokuro article:nth-child(2),
+.kukicha article:nth-child(2),
+.genmaicha article:nth-child(2),
+.houjicha article:nth-child(2) {
+  width: 100%;
+}
+
+.sencha article:nth-child(2) > div,
+.matcha article:nth-child(2) > div,
+.gyokuro article:nth-child(2) > div,
+.kukicha article:nth-child(2) > div,
+.genmaicha article:nth-child(2) > div,
+.houjicha article:nth-child(2) > div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 2.5rem;
+}
+
+.sencha article:nth-child(1) div img,
+.matcha article:nth-child(1) div img,
+.gyokuro article:nth-child(1) div img,
+.kukicha article:nth-child(1) div img,
+.genmaicha article:nth-child(1) div img,
+.houjicha article:nth-child(1) div img {
+  width: 80%;
+}
+
+.sencha-img p, .matcha-img p, .gyokuro-img p, .kukicha-img p, .genmaicha-img p, .houjicha-img p {
+  align-self: start;
+  margin-left: 4rem;
+  padding-top: 0.3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .name {
+    padding-top: 5rem;
+  }
+  .sencha, .matcha, .gyokuro, .kukicha, .genmaicha, .houjicha {
+    flex-direction: row;
+  }
+  .sencha article:nth-child(1),
+  .matcha article:nth-child(1),
+  .gyokuro article:nth-child(1),
+  .kukicha article:nth-child(1),
+  .genmaicha article:nth-child(1),
+  .houjicha article:nth-child(1) {
+    width: 50%;
+  }
+  .sencha article:nth-child(1) > div,
+  .matcha article:nth-child(1) > div,
+  .gyokuro article:nth-child(1) > div,
+  .kukicha article:nth-child(1) > div,
+  .genmaicha article:nth-child(1) > div,
+  .houjicha article:nth-child(1) > div {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .sencha article:nth-child(2),
+  .matcha article:nth-child(2),
+  .gyokuro article:nth-child(2),
+  .kukicha article:nth-child(2),
+  .genmaicha article:nth-child(2),
+  .houjicha article:nth-child(2) {
+    width: 50%;
+  }
+  .sencha article:nth-child(2) > div,
+  .matcha article:nth-child(2) > div,
+  .gyokuro article:nth-child(2) > div,
+  .kukicha article:nth-child(2) > div,
+  .genmaicha article:nth-child(2) > div,
+  .houjicha article:nth-child(2) > div {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-left: 2px solid rgb(64, 34, 0);
   }
 }
 

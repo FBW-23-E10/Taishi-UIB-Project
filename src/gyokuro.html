@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="../fontawesome-free-6.5.1-web/css/all.min.css"
+    />
+    <title>Gyokuro</title>
+  </head>
+  <body>
+    <header class="gyokuro-header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" id="Head" href="#"
+            ><i class="fa-brands fa-envira"></i>Nihoncha</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="gyokuro-main">
+      <section class="name" id="gyokuro">
+        <h4>
+          <i class="fa-brands fa-envira"></i>Gyokuro<i
+            class="fa-brands fa-envira"
+          ></i>
+        </h4>
+      </section>
+      <section class="gyokuro">
+        <article class="gyokuro-img">
+          <div>
+            <img src="../images/Gyokuro-matcha-tea.jpg" alt="" />
+            <p>80g <br />€X.XX</p>
+          </div>
+        </article>
+        <article class="gyokuro-desc">
+          <div>
+            <p>
+              Gyokuro is a type of Japanese tea. According to the "Labeling
+              Standards for Green Teas" of the Japan Tea Industry Association,
+              gyokuro is defined as "tea leaves plucked from tea gardens that
+              have been almost completely blocked from sunlight by covering the
+              first tea shoots with a reed rack or other covering material such
+              as straw or cold gauze for about 20 days from the time they begin
+              to grow. Generally, theanine, which is responsible for the flavor
+              of tea, is produced in the roots and stored in the leaves via the
+              trunk. When theanine is exposed to sunlight, it changes into
+              catechins, which cause astringency. In other words, tea leaves,
+              the raw material for gyokuro, are covered with a sun-shade prior
+              to harvest (at least two weeks), which increases the amount of
+              amino acids such as theanine and conversely decreases the amount
+              of catechins (so-called tannins).
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <h2 id="contact">Contact</h2>
+      <form action="">
+        <div class="contact">
+          <label for="name">Full name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Your full name"
+          />
+          <label for="email">Your email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your Email"
+          />
+        </div>
+        <div class="contact">
+          <label for="message">Tell us your wish</label>
+          <textarea name="message" id="message" cols="30" rows="4"></textarea>
+          <button type="submit">Send</button>
+        </div>
+      </form>
+      <h3>
+        <a href="#"><i class="fa-brands fa-envira"></i>Nihoncha</a>
+      </h3>
+      <div class="icon">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"> <i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-shopify"></i></a>
+      </div>
+      <div class="f-navbar">
+        <ul>
+          <li><a href="../index.html">Back to Home</a></li>
+          <li><a href="#gyokuro">Gyokuro</a></li>
+        </ul>
+      </div>
+    </footer>
+    <p>Copyright ©2024 Nihoncha</p>
+    <script defer src=".././node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </body>
+</html>
