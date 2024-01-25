@@ -11897,6 +11897,14 @@ header {
   border-bottom: 2px solid transparent;
 }
 
+.transparent {
+  background-color: rgba(255, 255, 255, 0.305);
+}
+
+.dropdown-item:hover {
+  background-color: transparent;
+}
+
 .space {
   height: 34vh;
   width: 100%;
@@ -12107,9 +12115,12 @@ button:hover {
 
 .f-navbar {
   padding: 1rem 0;
+  width: 70%;
 }
 .f-navbar ul {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 1rem;
   padding: 0;
 }
@@ -12159,7 +12170,7 @@ body > p {
     width: 50%;
   }
   .icon a, .f-navbar a {
-    margin: 0 1.5rem;
+    margin: 0 0.5rem;
   }
   .hide {
     display: block;
