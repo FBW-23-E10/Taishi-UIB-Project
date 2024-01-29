@@ -1,6 +1,8 @@
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
-
+@import "variables";
+@import "mixin";
+@import "teas";
 @font-face {
     font-family: 'Ultra';
     src: url(../../Ultra/Ultra-Regular.ttf);
@@ -10,8 +12,7 @@
 
 // Hero
 body .main-hero video {
-    width: 100%;
-    height: 50vh;
+    @include h-and-w($width: 100%, $height: 50vh);
     object-fit: cover;
     position: absolute;
     z-index: -1;
@@ -21,15 +22,15 @@ body .main-hero video {
 
 // header
 header {
+    @include h-and-w($width: 100%, $height:none);
     position: sticky;
     top: 0;
     left: 0;
-    width: 100%;
     z-index: 10;
     background-color: rgba(255, 255, 255, 0.305);
 }
 .container-fluid > a {
-    color: rgb(64, 34, 0);
+    color: $primary-color;
 }
 .container-fluid > a:hover {
     color: rgb(255, 255, 255);
@@ -55,8 +56,7 @@ header {
 
 // space
 .space {
-  height: 34vh;
-  width: 100%;
+    @include h-and-w($width: 100%, $height: 34vh);
   h1 {
     font-family: monospace, sans-serif;
     font-size: 2.5rem;
@@ -80,16 +80,12 @@ header {
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    @include flex($fd-flex:column,  $ai-flex: center);
 }
 .a-container {
     background-color: rgba(255, 255, 255, 0.234);
     width: 80%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    @include flex($fd-flex:column,  $ai-flex: center);
     gap: 2rem;
     padding: 2rem 2rem;
     margin: 2rem 0;
@@ -122,9 +118,7 @@ p {
     background-attachment: fixed;
     padding: 2rem 3rem;
     width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    @include flex($fd-flex:column,  $ai-flex: center);
     a {
         color: black;
         text-decoration: none;
@@ -148,9 +142,7 @@ p {
 }
 .p-container {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex($fd-flex:column,  $ai-flex: center);
     gap: 1rem;
     .item {
         box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
@@ -177,9 +169,7 @@ footer {
     background: linear-gradient(rgb(190, 255, 203) 20%,rgb(108, 255, 137) 70%,rgb(53, 182, 53) 100%);
     width: 100%;
     min-height: 30vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex($fd-flex:column,  $ai-flex: center);
     
     h3 {
         margin-top: 2rem;
@@ -192,9 +182,7 @@ footer {
     }
     form {
         width: 70%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex($fd-flex:column,  $ai-flex: center);
         gap: 1rem;
     }
 }
@@ -211,8 +199,7 @@ footer h3 a:hover, .icon a:hover {
     transition: color 400ms ease, border-bottom 400ms ease;
 }
 .contact {
-    display: flex;
-    flex-direction: column;
+    @include flex($fd-flex:column, $jc-flex:none ,$ai-flex: none);
     width: 100%;
     button {
         margin-top: 1rem;
@@ -257,8 +244,7 @@ button:hover {
     padding: 1rem 0;
     width: 70%;
     ul {
-        display: flex;
-        justify-content: center;
+        @include flex($ai-flex: none);
         flex-wrap: wrap;
         gap: 1rem;
         padding: 0;
@@ -286,8 +272,7 @@ body > p {
 
 @media screen and (min-width: 768px) {
     .p-container {
-        flex-direction: row;
-        justify-content: space-evenly;
+        @include flex($jc-flex: space-evenly,  $ai-flex: none);
         flex-wrap: wrap;
         .item {
             width: 42%;
@@ -350,125 +335,3 @@ body > p {
     }
 }
 
-
-
-
-
-// sencha.html & matcha.html & gyokuro.html & kukicha.html & genmaicha.html & houjicha.html
-
-.sencha-header, .matcha-header, .gyokuro-header, .kukicha-header, .genmaicha-header, .houjicha-header {
-    position: fixed;
-    top: 0;
-}
-.sencha-main, .matcha-main, .gyokuro-main, .kukicha-main, .genmaicha-main, .houjicha-main {
-    background: linear-gradient(rgb(200, 255, 208) 20%,rgb(234, 255, 239) 70%,rgb(248, 255, 248) 100%);
-
-}
-.name {
-    text-align: center;
-    padding-top: 3.5rem;
-    h4 {font-size: 2rem;
-        color: rgb(64, 34, 0);
-        text-shadow: white 2px 2px 5px;
-    }
-}
-.sencha, .matcha, .gyokuro, .kukicha, .genmaicha, .houjicha {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-.sencha article:nth-child(1), 
-.matcha article:nth-child(1), 
-.gyokuro article:nth-child(1),
-.kukicha article:nth-child(1),
-.genmaicha article:nth-child(1),
-.houjicha article:nth-child(1){
-    width: 100%;
-}
-.sencha article:nth-child(1) > div, 
-.matcha article:nth-child(1) > div, 
-.gyokuro article:nth-child(1) > div,
-.kukicha article:nth-child(1) > div,
-.genmaicha article:nth-child(1) > div,
-.houjicha article:nth-child(1) > div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.sencha article:nth-child(2), 
-.matcha article:nth-child(2), 
-.gyokuro article:nth-child(2),
-.kukicha article:nth-child(2),
-.genmaicha article:nth-child(2),
-.houjicha article:nth-child(2){
-    width: 100%;
-}
-.sencha article:nth-child(2) > div, 
-.matcha article:nth-child(2) > div, 
-.gyokuro article:nth-child(2) > div,
-.kukicha article:nth-child(2) > div,
-.genmaicha article:nth-child(2) > div,
-.houjicha article:nth-child(2) > div{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 0 2.5rem ;
-}
-.sencha article:nth-child(1) div img, 
-.matcha article:nth-child(1) div img, 
-.gyokuro article:nth-child(1) div img,
-.kukicha article:nth-child(1) div img,
-.genmaicha article:nth-child(1) div img,
-.houjicha article:nth-child(1) div img{
-    width: 80%;
-}
-.sencha-img p , .matcha-img p, .gyokuro-img p, .kukicha-img p, .genmaicha-img p, .houjicha-img p {
-    align-self: start;
-    margin-left: 4rem;
-    padding-top: 0.3rem;
-}
-
-
-@media screen and (min-width: 768px) {
-    .name {
-        padding-top: 5rem;
-    }
-    .sencha, .matcha, .gyokuro, .kukicha, .genmaicha, .houjicha{
-        flex-direction: row;
-    }
-    .sencha article:nth-child(1) , 
-    .matcha article:nth-child(1), 
-    .gyokuro article:nth-child(1),
-    .kukicha article:nth-child(1),
-    .genmaicha article:nth-child(1),
-    .houjicha article:nth-child(1){
-        width: 50%;
-    }
-    .sencha article:nth-child(1) > div, 
-    .matcha article:nth-child(1) > div, 
-    .gyokuro article:nth-child(1) > div,
-    .kukicha article:nth-child(1) > div,
-    .genmaicha article:nth-child(1) > div,
-    .houjicha article:nth-child(1) > div{
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
-    .sencha article:nth-child(2), 
-    .matcha article:nth-child(2), 
-    .gyokuro article:nth-child(2),
-    .kukicha article:nth-child(2),
-    .genmaicha article:nth-child(2),
-    .houjicha article:nth-child(2){
-        width: 50%;
-    }
-    .sencha article:nth-child(2) > div, 
-    .matcha article:nth-child(2) > div, 
-    .gyokuro article:nth-child(2) > div,
-    .kukicha article:nth-child(2) > div,
-    .genmaicha article:nth-child(2) > div,
-    .houjicha article:nth-child(2) > div{
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        border-left: 2px solid rgb(64, 34, 0);
-    }
-}

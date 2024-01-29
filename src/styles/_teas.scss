@@ -1,0 +1,114 @@
+
+// sencha.html & matcha.html & gyokuro.html & kukicha.html & genmaicha.html & houjicha.html
+
+.sencha-header, .matcha-header, .gyokuro-header, .kukicha-header, .genmaicha-header, .houjicha-header {
+    position: fixed;
+    top: 0;
+}
+.sencha-main, .matcha-main, .gyokuro-main, .kukicha-main, .genmaicha-main, .houjicha-main {
+    background: linear-gradient(rgb(200, 255, 208) 20%,rgb(234, 255, 239) 70%,rgb(248, 255, 248) 100%);
+
+}
+.name {
+    text-align: center;
+    padding-top: 3.5rem;
+    h4 {font-size: 2rem;
+        color: rgb(64, 34, 0);
+        text-shadow: white 2px 2px 5px;
+    }
+}
+.sencha, .matcha, .gyokuro, .kukicha, .genmaicha, .houjicha {
+    width: 100%;
+    @include flex($fd-flex:column, $jc-flex:none, $ai-flex: none);
+}
+.sencha article:nth-child(1), 
+.matcha article:nth-child(1), 
+.gyokuro article:nth-child(1),
+.kukicha article:nth-child(1),
+.genmaicha article:nth-child(1),
+.houjicha article:nth-child(1){
+    width: 100%;
+}
+.sencha article:nth-child(1) > div, 
+.matcha article:nth-child(1) > div, 
+.gyokuro article:nth-child(1) > div,
+.kukicha article:nth-child(1) > div,
+.genmaicha article:nth-child(1) > div,
+.houjicha article:nth-child(1) > div{
+    @include flex($fd-flex:column,  $ai-flex: center);
+}
+.sencha article:nth-child(2), 
+.matcha article:nth-child(2), 
+.gyokuro article:nth-child(2),
+.kukicha article:nth-child(2),
+.genmaicha article:nth-child(2),
+.houjicha article:nth-child(2){
+    width: 100%;
+}
+.sencha article:nth-child(2) > div, 
+.matcha article:nth-child(2) > div, 
+.gyokuro article:nth-child(2) > div,
+.kukicha article:nth-child(2) > div,
+.genmaicha article:nth-child(2) > div,
+.houjicha article:nth-child(2) > div{
+    @include flex($fd-flex:column,  $ai-flex: center);
+    padding: 0 2.5rem ;
+}
+.sencha article:nth-child(1) div img, 
+.matcha article:nth-child(1) div img, 
+.gyokuro article:nth-child(1) div img,
+.kukicha article:nth-child(1) div img,
+.genmaicha article:nth-child(1) div img,
+.houjicha article:nth-child(1) div img{
+    width: 80%;
+}
+.sencha-img p , .matcha-img p, .gyokuro-img p, .kukicha-img p, .genmaicha-img p, .houjicha-img p {
+    align-self: start;
+    margin-left: 4rem;
+    padding-top: 0.3rem;
+}
+
+
+@media screen and (min-width: 768px) {
+    .name {
+        padding-top: 5rem;
+    }
+    .sencha, .matcha, .gyokuro, .kukicha, .genmaicha, .houjicha{
+        flex-direction: row;
+    }
+    .sencha article:nth-child(1) , 
+    .matcha article:nth-child(1), 
+    .gyokuro article:nth-child(1),
+    .kukicha article:nth-child(1),
+    .genmaicha article:nth-child(1),
+    .houjicha article:nth-child(1){
+        width: 50%;
+    }
+    .sencha article:nth-child(1) > div, 
+    .matcha article:nth-child(1) > div, 
+    .gyokuro article:nth-child(1) > div,
+    .kukicha article:nth-child(1) > div,
+    .genmaicha article:nth-child(1) > div,
+    .houjicha article:nth-child(1) > div{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .sencha article:nth-child(2), 
+    .matcha article:nth-child(2), 
+    .gyokuro article:nth-child(2),
+    .kukicha article:nth-child(2),
+    .genmaicha article:nth-child(2),
+    .houjicha article:nth-child(2){
+        width: 50%;
+    }
+    .sencha article:nth-child(2) > div, 
+    .matcha article:nth-child(2) > div, 
+    .gyokuro article:nth-child(2) > div,
+    .kukicha article:nth-child(2) > div,
+    .genmaicha article:nth-child(2) > div,
+    .houjicha article:nth-child(2) > div{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        border-left: 2px solid rgb(64, 34, 0);
+    }
+}
